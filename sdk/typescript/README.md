@@ -1,5 +1,7 @@
 # TypeScript SDK for Datastar
 
+> **Note:** This SDK supports multiple JavaScript runtimes: Node.js, Deno, and Bun. When developing or contributing to this SDK, you'll need to have these runtimes installed to test across all supported platforms. The main npm scripts use Deno for building and testing, so make sure you have Deno installed as your primary development environment.
+
 Implements the [SDK spec](../README.md) and exposes an abstract
 ServerSentEventGenerator class that can be used to implement runtime specific
 classes. NodeJS and web standard runtimes are currently implemented.
