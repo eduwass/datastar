@@ -133,6 +133,8 @@ Creates a Server-Sent Event stream for real-time communication.
 }
 ```
 
+> **Important:** When `keepalive: true` is set, the stream will not be closed automatically after the callback finishes. You are responsible for calling `stream.close()` to end the stream.
+
 #### Stream Instance Methods
 
 ##### `mergeSignals(signals)`
@@ -168,7 +170,7 @@ deno run -A build.ts
 
 You can also specify a custom version:
 ```bash
-deno run -A build.ts 1.0.0
+deno run -A build.ts VERSION
 ```
 
 ### Testing
