@@ -168,7 +168,7 @@ Build the npm package:
 deno run -A build.ts
 ```
 
-You can also specify a custom version:
+The above will pick the version from the [src/consts.ts](src/consts.ts) file. If you want to specify the version, use:
 ```bash
 deno run -A build.ts VERSION
 ```
