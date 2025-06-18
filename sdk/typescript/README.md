@@ -2,6 +2,21 @@
 
 > **Note:** This SDK supports multiple JavaScript runtimes: Node.js, Deno, and Bun. When developing or contributing to this SDK, you'll need to have these runtimes installed to test across all supported platforms. The main package.json scripts use Deno for building and testing, so make sure you have Deno installed as your primary development environment.
 
+## 🚀 Quick Start Examples
+
+Choose your preferred JavaScript runtime and get started in seconds:
+
+| Runtime | Example File | How to Run | Description |
+|---------|--------------|------------|-------------|
+| **Node.js** | [`examples/node/node.js`](./examples/node/node.js) | `cd examples/node && npm install && node node.js` | Full-featured example with package.json setup |
+| **Deno** | [`examples/deno/deno.ts`](./examples/deno/deno.ts) | `deno run --allow-net examples/deno/deno.ts` | Native Deno example with web standards |
+| **Bun** | [`examples/bun/bun.ts`](./examples/bun/bun.ts) | `cd examples/bun && bun run bun.ts` | Modern Bun example with native routing |
+
+> 💡 **New to Datastar?** All examples create a simple web server that demonstrates signal handling and fragment merging. Just run the command for your runtime, then visit `http://localhost:3000` in your browser!
+
+
+## 📖 Documentation
+
 Implements the [SDK spec](../README.md) and exposes an abstract
 ServerSentEventGenerator class that can be used to implement runtime specific
 classes. NodeJS and web standard runtimes are currently implemented.
@@ -43,13 +58,6 @@ option will stop the stream from being closed once the onStart callback is
 finished. That means the user is responsible for ending the stream with
 `this.close()`.
 
-## Examples
-
-Follow the links for more complete (and executable) examples
-
-- [NodeJS](./examples/node.js)
-- [Deno](./examples/deno.ts)
-- [Bun](./src/web/bun.ts) - Test server implementation
 
 ## Frameworks / Alternate runtimes
 
