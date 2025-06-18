@@ -4,11 +4,11 @@
 
 Choose your preferred JavaScript runtime and get started in seconds:
 
-| Runtime | Example File | How to Run | Description |
-|---------|--------------|------------|-------------|
-| **Node.js** | [`examples/node/node.js`](./examples/node/node.js) | [📋 Instructions](./examples/node/README.md) | Full-featured example with package.json setup |
-| **Deno** | [`examples/deno/deno.ts`](./examples/deno/deno.ts) | [📋 Instructions](./examples/deno/README.md) | Native Deno example with web standards |
-| **Bun** | [`examples/bun/bun.ts`](./examples/bun/bun.ts) | [📋 Instructions](./examples/bun/README.md) | Modern Bun example with native routing |
+| Runtime | Example File | How to Run | Online Example | Description |
+|---------|--------------|------------|----------------|-------------|
+| **Node.js** | [`examples/node/node.js`](./examples/node/node.js) | [📋 Instructions](./examples/node/README.md) | _Coming soon_ | Full-featured example with package.json setup |
+| **Deno** | [`examples/deno/deno.ts`](./examples/deno/deno.ts) | [📋 Instructions](./examples/deno/README.md) | [🌐 Try it live](https://www.val.town/x/eduwass/datastar-deno/code/main.tsx) | Native Deno example with web standards |
+| **Bun** | [`examples/bun/bun.ts`](./examples/bun/bun.ts) | [📋 Instructions](./examples/bun/README.md) | _Coming soon_ | Modern Bun example with native routing |
 
 > 💡 **New to Datastar?** All examples create a simple web server that demonstrates signal handling and fragment merging. Just run the command for your runtime, then visit `http://localhost:3000` in your browser!
 
