@@ -8,9 +8,9 @@ Choose your preferred JavaScript runtime and get started in seconds:
 
 | Runtime | Example File | How to Run | Description |
 |---------|--------------|------------|-------------|
-| **Node.js** | [`examples/node/node.js`](./examples/node/node.js) | `cd examples/node && npm install && node node.js` | Full-featured example with package.json setup |
-| **Deno** | [`examples/deno/deno.ts`](./examples/deno/deno.ts) | `deno run --allow-net examples/deno/deno.ts` | Native Deno example with web standards |
-| **Bun** | [`examples/bun/bun.ts`](./examples/bun/bun.ts) | `cd examples/bun && bun run bun.ts` | Modern Bun example with native routing |
+| **Node.js** | [`examples/node/node.js`](./examples/node/node.js) | [📋 Instructions](./examples/node/README.md) | Full-featured example with package.json setup |
+| **Deno** | [`examples/deno/deno.ts`](./examples/deno/deno.ts) | [📋 Instructions](./examples/deno/README.md) | Native Deno example with web standards |
+| **Bun** | [`examples/bun/bun.ts`](./examples/bun/bun.ts) | [📋 Instructions](./examples/bun/README.md) | Modern Bun example with native routing |
 
 > 💡 **New to Datastar?** All examples create a simple web server that demonstrates signal handling and fragment merging. Just run the command for your runtime, then visit `http://localhost:3000` in your browser!
 
