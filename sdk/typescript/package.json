@@ -7,7 +7,8 @@
     "serve-deno": "deno run -A src/web/deno.ts",
     "serve-node": "deno run -A build.ts && node npm/esm/node/node.js",
     "build": "deno run -A build.ts",
-    "test-node": "./test/test-node.sh"
+    "test-node": "./test/test-node.sh",
+    "test-deno": "./test/test-deno.sh"
   },
   "type": "module",
   "repository": {

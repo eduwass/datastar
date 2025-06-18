@@ -80,20 +80,33 @@ For manual testing, you can also start just the server:
 $ npm run serve-node
 ```
 
-### Testing deno
-
-Start by running the deno server
-
-```shell
-$ deno --allow-net  ./src/web/deno.ts
-```
-
-Then run the test suite
+Then run the test suite manually:
 
 ```shell
 $ cd ../test
-$ ./test-all.sh http://localhost:8000/
-Running tests with argument: http://localhost:8000/
+$ ./test-all.sh http://127.0.0.1:3000
+Running tests with argument: http://127.0.0.1:3000
 Processing GET cases...
 Processing POST cases...
 ```
+
+### Testing deno
+
+Run the complete test suite with a single command:
+
+```shell
+$ npm run test-deno
+```
+
+This will automatically:
+1. Start the Deno test server
+2. Run the test suite
+3. Clean up the server process
+
+For manual testing, you can also start just the server:
+
+```shell
+$ npm run serve-deno
+```
+
+And run the tests manually like with Node (explained above).
