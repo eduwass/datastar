@@ -7,7 +7,9 @@ classes. NodeJS and web standard runtimes are currently implemented.
 Currently it only exposes an http1 server, if you want http2 I recommend you use
 a reverse proxy until http2 support is added.
 
-Deno is used for building the npm package: `deno run -A build.ts VERSION`
+Deno is used for building the npm package: `deno run -A build.ts` (uses version from `src/consts.ts` by default, or specify custom version as argument)
+
+**Note:** Building is only required if you want to use the SDK as an npm package or test the examples. For running the test servers, you can run the TypeScript source files directly with Deno.
 
 Usage is straightforward:
 
@@ -63,8 +65,10 @@ more information.
 Start by building and running the node server
 
 ```shell
-$ deno run -A build.ts xxx
-$ node ./npm/esm/node/node.js
+$ deno run -A build.ts
+$ node npm/esm/node/node.js
+# or use the npm script:
+$ npm run serve-node
 ```
 
 Then run the test suite

@@ -5,7 +5,8 @@
   "scripts": {
     "check": "deno lint && deno check src/node/node.ts && deno check src/web/deno.ts",
     "serve-deno": "deno run -A src/web/deno.ts",
-    "serve-node": "deno run -A build.ts && node npm/esm/node/node.js"
+    "serve-node": "deno run -A build.ts && node npm/esm/node/node.js",
+    "build": "deno run -A build.ts"
   },
   "type": "module",
   "repository": {
