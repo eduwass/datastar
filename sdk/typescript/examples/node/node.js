@@ -1,6 +1,5 @@
 import { createServer } from "node:http";
-// for this to work the esm build needs to be generated, see ../README.md
-import { ServerSentEventGenerator } from "../npm/esm/node/serverSentEventGenerator.js";
+import { ServerSentEventGenerator } from "datastar-sdk/node";
 
 const hostname = "127.0.0.1";
 const port = 3000;
