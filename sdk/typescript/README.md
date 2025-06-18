@@ -1,5 +1,7 @@
 # Datastar TypeScript SDK
 
+![Static Badge](https://img.shields.io/badge/run_time-node_js-2a682d?logo=nodedotjs&labelColor=black) ![Static Badge](https://img.shields.io/badge/run_time-deno-6affaf?logo=deno&labelColor=black) ![Static Badge](https://img.shields.io/badge/run_time-bun-f672b6?logo=bun&labelColor=black)
+
 A TypeScript SDK for building reactive web applications with [Datastar](https://github.com/starfederation/datastar).
 
 Implements the [SDK spec](../README.md) and exposes an abstract ServerSentEventGenerator class that can be used to implement runtime specific classes. NodeJS and web standard runtimes are currently implemented.
