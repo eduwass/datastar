@@ -6,7 +6,8 @@
     "check": "deno lint && deno check src/node/node.ts && deno check src/web/deno.ts",
     "serve-deno": "deno run -A src/web/deno.ts",
     "serve-node": "deno run -A build.ts && node npm/esm/node/node.js",
-    "build": "deno run -A build.ts"
+    "build": "deno run -A build.ts",
+    "test-node": "./test/test-node.sh"
   },
   "type": "module",
   "repository": {

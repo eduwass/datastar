@@ -62,23 +62,22 @@ more information.
 
 ### Testing node
 
-Start by building and running the node server
+Run the complete test suite with a single command:
 
 ```shell
-$ deno run -A build.ts
-$ node npm/esm/node/node.js
-# or use the npm script:
-$ npm run serve-node
+$ npm run test-node
 ```
 
-Then run the test suite
+This will automatically:
+1. Build the npm package
+2. Start the Node.js test server
+3. Run the test suite
+4. Clean up the server process
+
+For manual testing, you can also start just the server:
 
 ```shell
-$ cd ../test
-$ ./test-all.sh http://127.0.0.1:3000
-Running tests with argument: http://127.0.0.1:3000
-Processing GET cases...
-Processing POST cases...
+$ npm run serve-node
 ```
 
 ### Testing deno
