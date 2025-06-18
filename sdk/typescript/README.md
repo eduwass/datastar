@@ -49,6 +49,7 @@ Follow the links for more complete (and executable) examples
 
 - [NodeJS](./examples/node.js)
 - [Deno](./examples/deno.ts)
+- [Bun](./src/web/bun.ts) - Test server implementation
 
 ## Frameworks / Alternate runtimes
 
@@ -59,15 +60,14 @@ methods.
 
 ## Testing
 
-A shell based testing suite is provided; see the [readme](../test/README.md) for
-more information.
+A shell based testing suite is provided for all supported runtimes (Node.js, Deno, and Bun). See the [readme](../test/README.md) for more information.
 
 ### Testing node
 
 Run the complete test suite with a single command:
 
 ```shell
-$ deno run test-node
+$ npm run test-node
 ```
 
 This will automatically:
@@ -79,7 +79,7 @@ This will automatically:
 For manual testing, you can also start just the server:
 
 ```shell
-$ deno run serve-node
+$ npm run serve-node
 ```
 
 Then run the test suite manually:
@@ -97,7 +97,7 @@ Processing POST cases...
 Run the complete test suite with a single command:
 
 ```shell
-$ deno run test-deno
+$ deno task test-deno
 ```
 
 This will automatically:
@@ -108,7 +108,29 @@ This will automatically:
 For manual testing, you can also start just the server:
 
 ```shell
-$ deno run serve-deno
+$ deno task serve-deno
+```
+
+And run the tests manually like with Node (explained above).
+
+### Testing bun
+
+Run the complete test suite with a single command:
+
+```shell
+$ bun run test-bun
+```
+
+This will automatically:
+1. Build the npm package (for shared dependencies)
+2. Start the Bun test server
+3. Run the test suite
+4. Clean up the server process
+
+For manual testing, you can also start just the server:
+
+```shell
+$ bun run serve-bun
 ```
 
 And run the tests manually like with Node (explained above).
