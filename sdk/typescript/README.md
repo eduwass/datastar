@@ -1,3 +1,5 @@
+<p align="center"><img width="150" src="https://putyourlightson.com/assets/logos/datastar.svg"></p>
+
 # Datastar TypeScript SDK
 
 ![Static Badge](https://img.shields.io/badge/run_time-node_js-2a682d?logo=nodedotjs&labelColor=black) ![Static Badge](https://img.shields.io/badge/run_time-deno-6affaf?logo=deno&labelColor=black) ![Static Badge](https://img.shields.io/badge/run_time-bun-f672b6?logo=bun&labelColor=black)
